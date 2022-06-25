@@ -750,7 +750,6 @@ body {
 
 .form-field-label-checkbox-input:checked ~ .form-field-label-checkbox-icon {
   background-image: url(../images/svg/checkbox-icon.svg);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } */
 
 /* Иконка checkbox рабочий способ но не оптимальный  */
@@ -764,12 +763,15 @@ body {
   margin-right: 7px;
   border: 2px solid var(--main-text-color);
   border-radius: 2px;
+  background-image: ur;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-field-label-checkbox-input:checked ~ .form-field-label-checkbox-icon{
 	background-image: url(../images/svg/check-icon.svg);
   background-color: var(--accent-color);
 	border-color: var(--accent-color);
-	
+  background-repeat: no-repeat;
+  
 }
 /*  Иконка checkbox оптимальный способ  */
 
