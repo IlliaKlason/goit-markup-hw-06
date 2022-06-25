@@ -734,20 +734,44 @@ body {
 .form-field-label-checkbox {
   display: flex;
   align-items: center;
-justify-content: center;
+  justify-content: center;
   margin-top: 20px;
   margin-bottom: 30px;
 }
-.form-field-label-checkbox-icon {
+/* Иконка checkbox рабочий способ но не оптимальный  */
+
+/* .form-field-label-checkbox-icon {
   width: 16px;
   height: 15px;
   margin-right: 7px;
   background-image: url(../images/svg/checkbox-border.svg);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field-label-checkbox-input:checked ~ .form-field-label-checkbox-icon {
   background-image: url(../images/svg/checkbox-icon.svg);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
+
+/* Иконка checkbox рабочий способ но не оптимальный  */
+
+
+/*  Иконка checkbox оптимальный способ  */
+
+.form-field-label-checkbox-icon {
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 2px solid var(--main-text-color);
+  border-radius: 2px;
 }
+.form-field-label-checkbox-input:checked ~ .form-field-label-checkbox-icon{
+	background-image: url(../images/svg/check-icon.svg);
+  background-color: var(--accent-color);
+	border-color: var(--accent-color);
+	
+}
+/*  Иконка checkbox оптимальный способ  */
 
 .form-field-label-checkbox-text {
   font-size: 14px;
@@ -777,10 +801,9 @@ justify-content: center;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-btn:hover,
-.form-btn:focus{
+.form-btn:focus {
   border: 1px solid var(--accent-color);
   background-color: var(--headline-text-color);
   color: var(--accent-color);
   cursor: pointer;
-  
 }
