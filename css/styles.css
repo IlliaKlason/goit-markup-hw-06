@@ -706,9 +706,14 @@ body {
   cursor: pointer;
 }
 
-.form-field-label-input:focus + .form-field-label-icon,
-.form-field-label-input:hover + .form-field-label-icon {
+.form-field-label-input:focus + .form-field-label-icon {
   color: var(--accent-color);
+}
+.form-field-label-input:hover {
+  cursor: pointer;
+}
+.form-field-label-icon:hover{
+  cursor: pointer;
 }
 .form-field-label-textarea {
   display: block;
